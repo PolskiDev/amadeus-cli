@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="html/assets/icons/AmadeusPhoneIcon.png"  type="image/x-icon">
+    <meta charset="UTF-8"/>
+    
+    <title>Amadeus Virtual Assistant</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="ChatGPT.js?v=12"></script>
+    <audio src="/public/sounds/boot.mp3"></audio>
+    <link type="text/css" rel="stylesheet" href="/public/Amadeus.css">
+    <script src="/public/Amadeus.js"></script>
+
+    <!--Nao adiciona (screen.js) vai dar erro-->
+
+    <!--Cria uma interface grafica movel e outra desktop.
+        Relacione da seguinte maneira:
+    
+        (Amadeus-mobile.html) >> (Amadeus.js)
+        (Amadeus.html) >> (Amadeus.js)
+    -->
+
+    <style>
+        body{
+            background-image: url("/public/assets/gifs/server.gif");
+            background-repeat: no-repeat; background-size: 100%;
+        }
+        h1,h2,h3,h4,h5,h6,p{color: white; font-family: Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+<!--<body onload="greeting()">-->
+<body>
+    <div class="wrapper">
+        <!--Width:Height=97%-->
+        <!--Width=400px,Height=300px-->
+        <div align="center">
+            <div id="developer">
+                <h1 style="color: white;
+                font-family: Arial, Helvetica, sans-serif;">Amadeus</h1>
+                <h4>Desenvolvido por Gabriel Margarido</h3>
+            </div>
+            <br><br><br>
+            <!--Nivel de acesso: Usuário Alpha-->
+
+            <!--assets/gifs/Siri-globular.gif-->
+            <!--img src="assets/gifs/gentleman-cloud.png"
+            alt="Amadeus Globular Sphere"
+            id="start" width="17%"-->
+
+            <img src="/public/assets/gifs/microphone1.png"
+            alt="Amadeus Globular Sphere"
+            id="start" width="13%">
+
+
+
+
+            <div class="actions">
+                <!-- Nao apaga a linha 36 de jeito nenhum, vai dar erro no microfone-->
+                <button id="end" onclick="sayMessage();" hidden>Rescue End</button>
+                
+                <!--button id="start">Talk</button>-->
+                <!--input type="radio" name="choice" value="no" id="choice-no"-->
+            </div>
+            <br><br>
+
+            
+            <div id="transcript" style="border-style: outset;
+            background-color: #18191A;
+            width: 25%;">
+                <h3>Console:</h3>
+
+            </div>
+        </div>
+        
+    </div>
+    <!--script src="Dictionary.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,53 @@
+.vertical-center {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+}
+.white {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.white-bold {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.red-button {
+    border-width: medium;
+    border-style: solid;
+    border-color: red;
+    width: 70%;
+    margin: auto;
+    background-color: #18191A;
+    font-weight: bold;
+
+    /*padding: 30px 10px;*/
+}
+
+
+.connect-with-amadeus {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.connect-with-amadeus-ipad {
+    color: red;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+#developer {
+    border-style: outset;
+    background-color: #18191A;
+    width: 30%;
+}
+#developer-mobile {
+    border-style: outset;
+    background-color: #18191A;
+    width: 50%;
+}
